@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkNexus - Tìm Kiếm Việc Làm</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo">WorkNexus</div>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="create-cv.php" id="show-cv-btn">Hồ sơ & CV</a></li>
+          <li><a href="#">Công cụ</a></li>
+          <li><a href="#">Đánh giá công ty</a></li>
+          <li><a href="#">Cẩm nang</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.php"><button id="login-btn">Đăng nhập</button></a>
+        <a href="register.php"><button id="register-btn">Đăng ký</button></a>
+      </div>
+    </header>
+    <div class="container">
+      <br>
+      <section class="search-bar">
+        <input type="text" placeholder="Vị trí tuyển dụng, tên công ty" />
+        <input type="text" placeholder="Địa điểm" />
+        <select>
+          <option value="">Ngành nghề</option>
+          <option value="kinhdoanh">Kinh doanh</option>
+          <option value="cntt">Công nghệ thông tin</option>
+          <option value="ketoan">Kế toán</option>
+        </select>
+        <button>Tìm kiếm</button>
+      </section>
+      
+      <section class="job-list">
+        <h2 class="centered">Cơ hội đột phá nghề nghiệp</h2>
+        <div class="job-container">
+          <div class="job">
+            <img src="images/vcbank.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Chuyên viên Tư vấn Tài chính</h3>
+              <p>Công ty Vietcombank</p>
+              <span>💰 15 - 25 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/fpt.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Nhân viên Kinh Doanh</h3>
+              <p>Công ty FPT</p>
+              <span>💰 10 - 20 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/samsung.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Quản lý Dự án</h3>
+              <p>Công ty Samsung</p>
+              <span>💰 20 - 35 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/vin.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Trưởng phòng Marketing</h3>
+              <p>Công ty VinGroup</p>
+              <span>💰 25 - 40 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/deloi.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Chuyên viên Nhân sự</h3>
+              <p>Công ty Deloitte</p>
+              <span>💰 12 - 22 triệu</span>
+            </div>
+          </div>
+          <!-- Thêm 5 công việc mới -->
+          <div class="job">
+            <img src="images/thp.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Chuyên viên Tư vấn Kinh doanh</h3>
+              <p>Công ty Tân Hiệp Phát</p>
+              <span>💰 18 - 28 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/masaa.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Giám đốc Phát triển Sản phẩm</h3>
+              <p>Công ty Masan Group</p>
+              <span>💰 30 - 50 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/lzd.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Nhân viên Digital Marketing</h3>
+              <p>Công ty Lazada</p>
+              <span>💰 15 - 25 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/flc.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Chuyên viên Phát triển Kinh doanh</h3>
+              <p>Công ty Tập đoàn FLC</p>
+              <span>💰 20 - 30 triệu</span>
+            </div>
+          </div>
+          <div class="job">
+            <img src="images/tgdd.png" alt="Company Logo" class="job-image">
+            <div class="job-details">
+              <h3>Trưởng phòng Hành chính Nhân sự</h3>
+              <p>Công ty Thế Giới Di Động</p>
+              <span>💰 18 - 35 triệu</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="video-embed">
+        <h2>Giới thiệu WorkNexus</h2>
+        <iframe width="900" height="500" src="images/PhamTanHao_720p.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="job-categories">
+        <h2 class="centered">Danh mục ngành nghề</h2>
+        <div class="categories-container">
+          <button>💼 Kinh doanh</button>
+          <button>💻 Công nghệ thông tin</button>
+          <button>📊 Kế toán</button>
+          <button>📢 Marketing</button>
+          <button>🏗 Xây dựng</button>
+          <button>⚖️ Pháp lý</button>
+          <button>🎨 Thiết kế đồ họa</button>
+          <button>🏥 Y tế</button>
+          <button>🎓 Giáo dục</button>
+          <button>📞 Chăm sóc khách hàng</button>
+          <button>🚚 Logistics</button>
+          <button>🔬 Khoa học & Công nghệ</button>
+        </div>
+      </section>
+
+      <div class="dashboard">
+        <h1>Thị trường việc làm hôm nay <span id="current-date"></span></h1>
+        <div class="stats">
+          <div class="stat-box">
+            <h2 id="new-jobs">0</h2>
+            <p>Việc làm mới 24h gần nhất</p>
+          </div>
+          <div class="stat-box">
+            <h2 id="total-jobs">0</h2>
+            <p>Việc làm đang tuyển</p>
+          </div>
+          <div class="stat-box">
+            <h2 id="total-companies">0</h2>
+            <p>Công ty đang tuyển</p>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="jobChart"></canvas>
+          <canvas id="jobGrowthChart"></canvas>
+        </div>
+      </div>
+
+      <section class="company-reviews">
+        <h2 class="centered">Đánh giá công ty</h2>
+        <div class="review-container">
+          <div class="review">
+            <h3>Công ty ABC</h3>
+            <p>⭐⭐⭐⭐☆</p>
+            <p>Môi trường làm việc tốt, đồng nghiệp thân thiện.</p>
+          </div>
+          <div class="review">
+            <h3>Công ty XYZ</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Chế độ đãi ngộ hấp dẫn, có cơ hội thăng tiến.</p>
+          </div>
+          <div class="review">
+            <h3>Công ty DEF</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Quản lý hỗ trợ tốt, văn phòng hiện đại.</p>
+          </div>
+          <div class="review">
+            <h3>Công ty GHI</h3>
+            <p>⭐⭐⭐⭐☆</p>
+            <p>Lương ổn định, có nhiều phúc lợi.</p>
+          </div>
+          <div class="review">
+            <h3>Công ty JKL</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Có cơ hội phát triển kỹ năng chuyên môn.</p>
+          </div>
+          <div class="review">
+            <h3>Công ty MNO</h3>
+            <p>⭐⭐⭐☆☆</p>
+            <p>Áp lực cao nhưng lương thưởng xứng đáng.</p>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="header">
+          <h2>Thương hiệu hàng đầu</h2>
+          <p>
+            Các thương hiệu tuyển dụng đáng tin cậy và phát triển mạnh mẽ
+          </p>
+        </div>
+        <div class="filter-bar">
+          <button class="active">Tất cả</button>
+          <button>Ngân hàng</button>
+          <button>Bất động sản</button>
+          <button>Xây dựng</button>
+          <button>IT - Phần mềm</button>
+          <button>Tài chính</button>
+          <button>Logistics - Vận tải</button>
+          <button>Sản xuất</button>
+        </div>
+        
+
+
+        <div class="company-list">
+          <div class="company">
+            <img src="images/tgdd.png" alt="vcb" />
+            <div class="company-info">
+              <h5>TMCP Ngoại thương Việt Nam</h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/vietinbank.png" alt="vcb" />
+            <div class="company-info">
+              <h5>TMCP Công Thương Việt Nam</h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>4 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/MB.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>TMCP Quân đội</h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/TCB.png" alt="vcb" />
+            <div class="company-info">
+              <h5>TMCP Kỹ Thương Việt Nam </h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/BIDV.png" alt="MB" />
+            <div class="company-info">
+              <h5>TMCP Ngân hàng TMCP</h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/ACB.png" alt="vcb" />
+            <div class="company-info">
+              <h5>TMCP Á Châu</h5>
+              <p>Ngân hàng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/VG.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Vingroup</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/SG.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Sun Group</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/HT.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Hưng Thịnh Corporation</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/PMH.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Phú Mỹ Hưng</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/LN.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Nam Long Group</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/ĐX.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Đất Xanh Group</h5>
+              <p>Bất động sản</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/HB.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Hòa Bình Group</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/DT.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Delta Group</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/RC.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Ricons</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/UC.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Unicons</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/PH.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Phục Hưng Holdings</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/FC.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Fecon</h5>
+              <p>Xây dựng</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/VTP.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Viettel Post</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/GHN.png" alt="vcb" />
+            <div class="company-info">
+              <h5>GHN (Giao Hàng Nhanh)</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/JAT.png" alt="vcb" />
+            <div class="company-info">
+              <h5>J&T Express</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/NT.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Nhat Tin Logistics</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/DHL.png" alt="vcb" />
+            <div class="company-info">
+              <h5>DHL Vietnam</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/FE.png" alt="vcb" />
+            <div class="company-info">
+              <h5>FedEx Vietnam</h5>
+              <p>Logistics - Vận tải</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/1.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>VinFast</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/2.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Samsung Vietnam</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/3.png" alt="vcb" />
+            <div class="company-info">
+              <h5>LG Electronics Vietnam</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/6.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Vinamilk</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/4.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Intel Products Vietnam</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/5.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Nestlé Vietnam</h5>
+              <p>Sản xuất</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="company">
+            <img src="images/MA.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>Mirae Asset Finance Vietnam</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/SF.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Shinhan Finance</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/MC.png" alt="vcb" />
+            <div class="company-info">
+              <h5>MCredit</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/HDSS.png" alt="vcb" />
+            <div class="company-info">
+              <h5>HD SAISON</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/HC.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Home Credit Vietnam</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/FE.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>FE Credit</h5>
+              <p>Tài chính</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/VTS.png" alt="vcb" />
+            <div class="company-info">
+              <h5>Viettel Solutions</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/MS.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>MISA</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/VNG.png" alt="vcb" />
+            <div class="company-info">
+              <h5>VNG Corporation</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/CMC.png" alt="vcb" />
+            <div class="company-info">
+              <h5>CMC Corporation</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="company">
+            <img src="images/VNPT.jpg" alt="vcb" />
+            <div class="company-info">
+              <h5>VNPT Technology</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="company">
+            <img src="images/FPT.png" alt="vcb" />
+            <div class="company-info">
+              <h5>FPT Software</h5>
+              <p>IT - Phần mềm</p>
+              <div class="company-meta">
+                <i class="fas fa-briefcase"></i>
+                <span>7 việc làm</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="auth-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2 id="modal-title">Đăng nhập</h2>
+          <input type="text" id="username" placeholder="Tên đăng nhập" />
+          <input type="password" id="password" placeholder="Mật khẩu" />
+          <button id="auth-submit">Xác nhận</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="brands-container">
+      <div class="brands-wrapper">
+        <div class="brand"><img src="images/vcbank.png" alt="Brand 1"></div>
+        <div class="brand"><img src="images/vin.png" alt="Brand 2"></div>
+        <div class="brand"><img src="images/thp.png" alt="Brand 3"></div>
+        <div class="brand"><img src="images/tgdd.png" alt="Brand 4"></div>
+        <div class="brand"><img src="images/samsung.png" alt="Brand 5"></div>
+        <div class="brand"><img src="images/masaa.png" alt="Brand 6"></div>
+        <div class="brand"><img src="images/lzd.png" alt="Brand 7"></div>
+        <div class="brand"><img src="images/fpt.png" alt="Brand 8"></div>
+        <div class="brand"><img src="images/flc.png" alt="Brand 7"></div>
+        <div class="brand"><img src="images/deloi.png" alt="Brand 8"></div>
+        <div class="brand"><img src="images/vcbank.png" alt="Brand 1"></div>
+        <div class="brand"><img src="images/vin.png" alt="Brand 2"></div>
+        <div class="brand"><img src="images/thp.png" alt="Brand 3"></div>
+      </div>
+    </div>
+    <br>
+    <div class="brands-container1">
+      <div class="brands-wrapper">
+        <div class="brand"><img src="images/deloi.png" alt="Brand 8"></div>
+        <div class="brand"><img src="images/vcbank.png" alt="Brand 1"></div>
+        <div class="brand"><img src="images/vin.png" alt="Brand 2"></div>
+        <div class="brand"><img src="images/samsung.png" alt="Brand 5"></div>
+        <div class="brand"><img src="images/masaa.png" alt="Brand 6"></div>
+        <div class="brand"><img src="images/vin.png" alt="Brand 2"></div>
+        <div class="brand"><img src="images/thp.png" alt="Brand 3"></div>
+        <div class="brand"><img src="images/tgdd.png" alt="Brand 4"></div>
+        <div class="brand"><img src="images/lzd.png" alt="Brand 7"></div>
+        <div class="brand"><img src="images/fpt.png" alt="Brand 8"></div>
+        <div class="brand"><img src="images/flc.png" alt="Brand 7"></div>
+        <div class="brand"><img src="images/thp.png" alt="Brand 3"></div>
+        <div class="brand"><img src="images/vcbank.png" alt="Brand 1"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <section class="intro-section">
+        <h1 class="headline">Khám Phá Cơ Hội Nghề Nghiệp Tại WorkNexus</h1>
+        <p class="subheading">Với đãi ngộ hấp dẫn và môi trường làm việc tại các công ty hàng đầu</p>        
+        <p class="intro-text">
+          Trước sự phát triển vượt bậc của nền kinh tế, nhiều ngành nghề đang khan hiếm nhân lực hoặc thiếu những tài năng đích thực. Vì vậy, WorkNexus mang đến cho bạn cơ hội tuyệt vời để gia nhập các công ty hàng đầu, nơi bạn có thể học hỏi, phát triển nghề nghiệp và nhận được những đãi ngộ xứng đáng.
+        </p>       
+        <div class="cta-section">
+          <h2 class="cta-title">Vậy tại sao bạn nên ứng tuyển tại WorkNexus?</h2>
+          <ul class="cta-list">
+            <li>
+              <strong>Việc làm chất lượng:</strong> 
+              <p>Hàng ngàn tin tuyển dụng cập nhật liên tục, với những công việc chất lượng cao tại các công ty lớn.</p>
+            </li>
+            <li>
+              <strong>Hệ thống gợi ý thông minh:</strong>
+              <p>Hệ thống tự động gợi ý công việc phù hợp với CV của bạn, giúp bạn tìm kiếm cơ hội một cách dễ dàng.</p>
+            </li>
+            <li>
+              <strong>CV đẹp miễn phí:</strong>
+              <p>Chúng tôi cung cấp công cụ tạo CV đẹp, dễ chỉnh sửa và hoàn toàn miễn phí, giúp bạn tạo ấn tượng mạnh với nhà tuyển dụng.</p>
+            </li>
+            <li>
+              <strong>Hỗ trợ ứng viên tối đa:</strong>
+              <p>Nhà tuyển dụng chủ động liên hệ với bạn qua hệ thống kết nối ứng viên thông minh. Bạn cũng sẽ nhận báo cáo chi tiết về việc nhà tuyển dụng đã xem CV và gửi offer cho bạn.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="cta-button">
+          <a href="create-cv.php" class="btn">Tạo CV và Ứng Tuyển Ngay</a>
+        </div>
+      
+    </section>
+  </section> 
+  <br>
+  <br>
+  <br>
+  <section class="recruitment">
+    <div class="container_hr">
+      <div class="content_hr">
+        <h1 class="title_hr">Dành cho nhà tuyển dụng</h1>
+        <p class="subtitle_hr">Bạn đang tìm kiếm ứng viên cho vị trí của mình?</p>
+        <p class="description_hr">Chúng tôi cung cấp những giải pháp tuyển dụng tối ưu, phù hợp với mọi loại hình doanh nghiệp và tiêu chuẩn riêng biệt của bạn.</p>
+        <button class="btn_tuyendung">ĐĂNG TIN TUYỂN DỤNG</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/worknexus-logo.png" alt="WorkNexus Logo" class="footer-logo-img" />
+        <p>Tiến Lợi Thế - Nối Thành Công</p>
+      </div>
+  
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Về WorkNexus</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Quy chế hoạt động</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Hồ sơ và CV</h3>
+          <ul>
+            <li><a href="#">Quản lý CV của bạn</a></li>
+            <li><a href="#">TopNexus Profile</a></li>
+            <li><a href="#">Hướng dẫn viết CV</a></li>
+            <li><a href="#">Thư viện CV theo ngành nghề</a></li>
+            <li><a href="#">Review CV</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Khám phá</h3>
+          <ul>
+            <li><a href="#">Ứng dụng di động WorkNexus</a></li>
+            <li><a href="#">Tính lương Gross - Net</a></li>
+            <li><a href="#">Lập kế hoạch tiết kiệm</a></li>
+            <li><a href="#">Trắc nghiệm MBTI</a></li>
+            <li><a href="#">Trắc nghiệm MI</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Đối tác</h3>
+          <ul>
+            <li><a href="#">TestCenter</a></li>
+            <li><a href="#">TopHR</a></li>
+            <li><a href="#">ViecNgay</a></li>
+            <li><a href="#">Happy Time</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="contact-info">
+          <p>Hotline: +84 961 651 933</p>
+          <p>Email: phamtanhao1909@gmail.com</p>
+        </div>
+        <div class="social-links">
+          <p>Cộng đồng WorkNexus</p>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+  
+</html>
